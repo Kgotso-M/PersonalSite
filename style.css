@@ -175,6 +175,7 @@ nav ul li a:hover::after {
 
 
 /* Start of about page */
+
 .abtheader {
     margin-top: 25px;
     text-align: center;
@@ -295,7 +296,7 @@ nav ul li a:hover::after {
 }
 
 .summary h2{
-    text-decoration:underline;
+    text-decoration:none;
 }
 
 .containerr{
@@ -311,7 +312,7 @@ nav ul li a:hover::after {
     padding: 15px;
 }
  .interests h2{
-    text-decoration:underline;  
+    text-decoration:none;  
  }
 
 .hobbies {
@@ -331,18 +332,18 @@ nav ul li a:hover::after {
 }
 
 .hobbies h2{
-    text-decoration:underline;  
+    text-decoration:none;  
  }
 
 .likes span{
-    text-decoration: underline;
+    text-decoration: none;
     color: #fff;
     font-size: large;
     font-weight: 700;
 }
 
 .likes h2{
-    text-decoration:underline;  
+    text-decoration:none;  
  }
 
  .conclusion {
@@ -588,13 +589,29 @@ nav ul li a:hover::after {
 
 /* Start of footer */
 .footer {
+
     display: flex;
     justify-content: space-between;
     text-align: center;
-    align-items: center;
+    align-items:center;
     flex-wrap: wrap;
     padding: .8rem 4%;
     background: #080808;
+}
+
+.footer .social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 0.1rem;
+    color: #fff;
+    background: none;
+    border: 1.5rem solid #0808082d;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.5s;
 }
 
 .footer .footer-text {
