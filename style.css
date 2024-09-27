@@ -170,7 +170,9 @@ nav ul li a:hover::after {
 /* End of index page */
 
 
-/* ************************************************************** */
+
+/*************************************************************** */
+
 
 
 
@@ -372,11 +374,14 @@ nav ul li a:hover::after {
 
 
 
+
 /* End of about page */
 
 
 
+
 /* ************************************************************** */
+
 
 
 
@@ -434,7 +439,11 @@ nav ul li a:hover::after {
 /* End of services page */
 
 
+
+
 /* ************************************************************** */
+
+
 
 
 /* Start of portfolio page */
@@ -446,6 +455,26 @@ nav ul li a:hover::after {
 .portfolio h2 {
     padding-top: 3rem;
     margin-bottom: 2rem;
+}
+
+.portfolio h1{
+
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.pTitle{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.pTitle::before, .pTitle::after{
+    content: "";
+    height: 2px;
+    background-color: #02a2ff;
+    display: block;
 }
 
 .portfolio-container {
@@ -469,7 +498,9 @@ nav ul li a:hover::after {
 
 .portfolio-box img:hover {
     transform: scale(1.1);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.774) ,rgba(0, 0, 0, 0.719)), url(images/2.png); 
 }
+
 
 .portfolio-box .portfolio-layer {
     position: absolute;
@@ -489,6 +520,7 @@ nav ul li a:hover::after {
 
 .portfolio-box:hover .portfolio-layer {
     transform: translateY(0);
+    
 }
 
 .portfolio-layer h4 {
@@ -518,7 +550,11 @@ nav ul li a:hover::after {
 /* End of portfolio page */
 
 
+
+
 /* ************************************************************** */
+
+
 
 
 /* Start of contact page */
@@ -584,7 +620,11 @@ nav ul li a:hover::after {
 /* End of conatct page */
 
 
+
+
 /* ************************************************************** */
+
+
 
 
 /* Start of footer */
@@ -639,3 +679,14 @@ nav ul li a:hover::after {
 }
 
 /* End of footer */
+
+
+@media (max-width: 600px){
+
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5rem;
+    }
+}
