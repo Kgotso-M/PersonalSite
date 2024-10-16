@@ -478,6 +478,7 @@ nav ul li a:hover::after {
 }
 
 .portfolio-container {
+    margin-bottom: 3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -546,6 +547,27 @@ nav ul li a:hover::after {
     font-size: 2rem;
     color: #080808;
 }
+
+
+/* LOGOS CONTAINER */
+
+.logoContainer{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.logoContainer .logoBox {
+    height: 25rem;
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 0.4rem #02a2ff;
+    overflow: hidden;
+}
+
 
 /* End of portfolio page */
 
